@@ -14,13 +14,12 @@
 // Container at the top of the page, which houses the navigation options and title.
 .nav-header {
   width: 100%;
-  height: 50vh;
   font-family: $site-font;
-  background-color: rgb(105, 105, 105);
 
   nav {
     @include flexCenter(flex-start);
     height: 10vh;
+    position: absolute;
 
     h1 {
       margin-left: 20px;
@@ -38,6 +37,7 @@
       }
     }
 
+    // Nav bar button icons will disappear to make space on mobile screens.
     @media screen and (max-width: 599px) {
       .nav-icon {
         display: none;
@@ -50,6 +50,23 @@
       padding: 5px;
     }
   }
+
+  .banner-container {
+    @include flexCenter(center);
+    width: 100%;
+    height: 100%;
+    color: $nav-text-colour;
+
+    .cover-text {
+      // To make the text centre relative to the first (non-static) element; banner container,
+      position: absolute;
+    }
+  }
+}
+
+.cover-image {
+  width: 100%;
+  background-size: cover;
 }
 
 .main-section {
