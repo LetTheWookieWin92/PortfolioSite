@@ -15,12 +15,40 @@
 .nav-header {
   width: 100%;
   height: 50vh;
-  background-color: green;
+  font-family: $site-font;
+  background-color: rgb(105, 105, 105);
 
   nav {
-    @include flexCenter(space-between);
-    height: 50px;
-    background-color: red;
+    @include flexCenter(flex-start);
+    height: 10vh;
+
+    h1 {
+      margin-left: 20px;
+      color: $nav-text-colour;
+    }
+
+    .nav-button-box {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+
+      a {
+        color: $nav-text-colour;
+        text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .nav-icon {
+        display: none;
+      }
+    }
+
+    .nav-icon {
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+    }
   }
 }
 
