@@ -24,6 +24,7 @@
     h1 {
       margin-left: 20px;
       color: $nav-text-colour;
+      text-shadow: $nav-text-shadow;
     }
 
     .nav-button-box {
@@ -33,6 +34,7 @@
 
       a {
         color: $nav-text-colour;
+        text-shadow: $nav-text-shadow;
         text-decoration: none;
       }
     }
@@ -57,11 +59,42 @@
     height: 100%;
     color: $nav-text-colour;
 
-    .cover-text {
-      // To make the text centre relative to the first (non-static) element; banner container,
+    // Container for cover text and buttons
+    .cover-centre-elements-container {
+      @include flexCenter(center);
+      flex-direction: column;
       position: absolute;
-      color: white;
-      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
+
+      //Container for cover buttons (must change flex direction to have side by side)
+      .button-box {
+        flex-direction: row;
+
+        .cover-button-icon {
+          width: 35px;
+          height: 35px;
+          padding: 5px;
+        }
+      }
+
+      // Headline text centred on the cover image
+      .cover-text {
+        // To make the text centre relative to the first (non-static) element; banner container.
+        color: white;
+
+        // Off-set the text slightly below centre for aesthetic
+        margin-top: 100px;
+
+        // Drop-shadow for better contrast with the cover image
+        text-shadow: $nav-text-shadow;
+
+        // Font will size in accordance with viewport width
+        font-size: 3vw;
+
+        // Size-up the font slightly on smaller screens
+        @media screen and (max-width: 599px) {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
