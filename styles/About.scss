@@ -1,0 +1,114 @@
+// Headline text centred on the cover image
+.title-text {
+  // To make the text centre relative to the first (non-static) element; banner container.
+  color: white;
+
+  // Drop-shadow for better contrast with the cover image
+  text-shadow: $nav-text-shadow;
+
+  // Font will size in accordance with viewport width
+  font-size: 3vw;
+
+  // Size-up the font slightly on smaller screens
+  @media screen and (max-width: 599px) {
+    font-size: 20px;
+  }
+}
+
+.section-title {
+  //Defines the section as a full width area
+  width: 100%;
+
+  // Centres the text div horizontally
+  @include flexCenter(center);
+
+  //Aligns the text div at the top of the cross axis
+  align-items: flex-start;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  // Spacing between paras
+  h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.card-collection {
+  //Defines the section as a full width area
+  width: 100%;
+
+  // Centres the cards horizontally
+  @include flexCenter(space-evenly);
+
+  //Aligns the text div at the top of the cross axis
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+
+  // Extra spacing at the bottom of the page
+  padding-bottom: 10px;
+}
+
+.qualifications-card {
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+  position: relative;
+
+  // Gives it a card aesthetic
+  background-color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  .card-image {
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    margin-top: 5px;
+    margin-left: 60px;
+    position: absolute;
+
+    h4 {
+    }
+    p {
+      font-size: 10pt;
+    }
+  }
+}
+
+.skill-card {
+  margin: 10px;
+  position: relative;
+
+  // Gives it a card aesthetic, rounded corners like a pill
+  background-color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  p {
+    font-size: 12pt;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

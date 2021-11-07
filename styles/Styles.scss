@@ -104,63 +104,51 @@
   background-size: cover;
 }
 
-// Main section is the area beneath the cover photo, which includes a selfie and introduction text
-.main-section {
+.background {
+  background-color: $background-colour;
+  width: 100%;
+  height: 100%;
+}
+
+.centred-text-section {
   //Defines the section as a full width area
   width: 100%;
 
-  // Centres the image and text divs horizontally
+  // Centres the text div horizontally
   @include flexCenter(center);
 
-  //Aligns the image and text divs at the top of the cross axis
+  //Aligns the text div at the top of the cross axis
   align-items: flex-start;
 
-  // When the screen width gets too small, wraps the content so it appears beneath.
   flex-wrap: wrap;
 
-  // Spacing from the cover photo
   padding-top: 20px;
-
-  // Extra spacing at the bottom of the page
-  margin-bottom: 200px;
+  padding-bottom: 10px;
 
   // Sets font family for all the children
   font-family: $site-font;
 
-  // Profile image fills the image container
-  .profile-image {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  // Spacing between paras
+  p {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+}
 
-  // Intro text that sits next to profile image.
-  .profile-text {
-    // Neatly confines the text area
-    margin: 10px;
-    min-width: 300px;
-    max-width: 400px;
+.spacing {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: $background-colour;
+}
 
-    // Gives it a card aesthetic
-    background-color: rgb(240, 240, 240);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: underline;
+}
 
-    // Spacing between paras
-    p {
-      margin: 10px;
-    }
-  }
-
-  .profile-image-container {
-    // Neatly confines the image area
-    min-width: 300px;
-    max-width: 400px;
-    margin: 10px;
-
-    // Size-down the image slightly on smaller screens
-    @media screen and (max-width: 599px) {
-      min-width: 200px;
-      max-width: 225px;
-    }
-  }
+a:hover {
+  text-decoration: none;
 }
