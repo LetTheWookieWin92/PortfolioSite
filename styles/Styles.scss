@@ -104,7 +104,63 @@
   background-size: cover;
 }
 
+// Main section is the area beneath the cover photo, which includes a selfie and introduction text
 .main-section {
+  //Defines the section as a full width area
   width: 100%;
-  background-color: orange;
+
+  // Centres the image and text divs horizontally
+  @include flexCenter(center);
+
+  //Aligns the image and text divs at the top of the cross axis
+  align-items: flex-start;
+
+  // When the screen width gets too small, wraps the content so it appears beneath.
+  flex-wrap: wrap;
+
+  // Spacing from the cover photo
+  padding-top: 20px;
+
+  // Extra spacing at the bottom of the page
+  margin-bottom: 200px;
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  // Profile image fills the image container
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  // Intro text that sits next to profile image.
+  .profile-text {
+    // Neatly confines the text area
+    margin: 10px;
+    min-width: 300px;
+    max-width: 400px;
+
+    // Gives it a card aesthetic
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+    // Spacing between paras
+    p {
+      margin: 10px;
+    }
+  }
+
+  .profile-image-container {
+    // Neatly confines the image area
+    min-width: 300px;
+    max-width: 400px;
+    margin: 10px;
+
+    // Size-down the image slightly on smaller screens
+    @media screen and (max-width: 599px) {
+      min-width: 200px;
+      max-width: 225px;
+    }
+  }
 }

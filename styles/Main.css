@@ -121,6 +121,55 @@
 
 .main-section {
   width: 100%;
-  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+  margin-bottom: 200px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.main-section .profile-image {
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-section .profile-text {
+  margin: 10px;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-section .profile-text p {
+  margin: 10px;
+}
+
+.main-section .profile-image-container {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 599px) {
+  .main-section .profile-image-container {
+    min-width: 200px;
+    max-width: 225px;
+  }
 }
 /*# sourceMappingURL=Main.css.map */
