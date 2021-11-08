@@ -15,29 +15,6 @@
   }
 }
 
-.section-title {
-  //Defines the section as a full width area
-  width: 100%;
-
-  // Centres the text div horizontally
-  @include flexCenter(center);
-
-  //Aligns the text div at the top of the cross axis
-  align-items: flex-start;
-
-  margin-top: 20px;
-  margin-bottom: 10px;
-
-  // Sets font family for all the children
-  font-family: $site-font;
-
-  // Spacing between paras
-  h2 {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
 .card-collection {
   //Defines the section as a full width area
   width: 100%;

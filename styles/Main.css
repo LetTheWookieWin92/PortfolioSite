@@ -121,8 +121,33 @@
 
 .background {
   background-color: #f5f5f5;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.section-title {
   width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.section-title h2 {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .centred-text-section {
@@ -235,30 +260,6 @@ a:hover {
   }
 }
 
-.section-title {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-}
-
-.section-title h2 {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .card-collection {
   width: 100%;
   display: -webkit-box;
@@ -327,5 +328,43 @@ a:hover {
   margin-right: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.project-card {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.project-card .card-title {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+}
+
+.project-card .card-title p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  text-align: center;
+}
+
+.project-card .card-content {
+  position: absolute;
+  width: 100%;
+  top: 35px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.project-card .card-content p {
+  font-size: 10pt;
+  text-align: left;
 }
 /*# sourceMappingURL=Main.css.map */

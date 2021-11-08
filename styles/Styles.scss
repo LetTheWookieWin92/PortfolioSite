@@ -106,8 +106,32 @@
 
 .background {
   background-color: $background-colour;
+
+  // Fills remaining space (flex grow:1, flex shrink:1, flex-basis: auto)
+  flex: 0 1 auto;
+}
+
+.section-title {
+  //Defines the section as a full width area
   width: 100%;
-  height: 100%;
+
+  // Centres the text div horizontally
+  @include flexCenter(center);
+
+  //Aligns the text div at the top of the cross axis
+  align-items: flex-start;
+
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  // Spacing between paras
+  h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .centred-text-section {
