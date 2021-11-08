@@ -64,6 +64,7 @@
       @include flexCenter(center);
       flex-direction: column;
       position: absolute;
+      height: 100px;
 
       //Container for cover buttons (must change flex direction to have side by side)
       .button-box {

@@ -1,0 +1,42 @@
+.blog-card {
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  position: relative;
+
+  // Gives it a card aesthetic
+  background-color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+  // Sets font family for all the children
+  font-family: $site-font;
+
+  .card-image {
+    height: 200px;
+    width: 100%;
+    margin-left: 0;
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    margin-top: 210px;
+    margin-left: 10px;
+    position: absolute;
+
+    .post-date {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 9pt;
+      color: gray;
+    }
+
+    .post-description {
+      font-size: 9pt;
+    }
+  }
+}
