@@ -1,0 +1,40 @@
+.blog-card {
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.blog-card .card-image {
+  height: 200px;
+  width: 100%;
+  margin-left: 0;
+  position: absolute;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card .card-title {
+  margin-top: 210px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.blog-card .card-title .post-date {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 9pt;
+  color: gray;
+}
+
+.blog-card .card-title .post-description {
+  font-size: 9pt;
+}
+/*# sourceMappingURL=Blog.css.map */

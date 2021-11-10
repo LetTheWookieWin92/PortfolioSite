@@ -35,6 +35,8 @@
   width: 350px;
   height: 50px;
   margin: 10px;
+
+  // Card parent element must be set to relative positioning, to allow other divs to be positioned within it
   position: relative;
 
   // Gives it a card aesthetic
@@ -48,14 +50,17 @@
     height: 50px;
     width: 50px;
     margin-left: 0;
+    // Card child element must be set to absolute positioning, to allow it to be laid out correctly within the parent
     position: absolute;
   }
 
+  // Sizes the card image so it takes up the full width and maintains aspect ratio
   img {
     width: 100%;
     height: auto;
   }
 
+  // Positions the card title
   .card-title {
     margin-top: 5px;
     margin-left: 60px;
