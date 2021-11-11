@@ -1,0 +1,87 @@
+commit 6eee148fb167fd4b9a92f6cad214924d7691e666
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Thu Nov 11 10:54:21 2021 +1100
+
+    Final changes
+
+commit d8956ec0cf257411acd652592cb803e11bbc8f3a
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Thu Nov 11 10:34:15 2021 +1100
+
+    Before SRI implementation
+
+commit 81c24e389c00fc569a54b37082233804f5e36d3c
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Thu Nov 11 10:18:50 2021 +1100
+
+    Added more semantic elements
+
+commit 4a79c2608924cdbe3d1147e1bd1817f688f2c8d9
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Thu Nov 11 10:07:04 2021 +1100
+
+    Added more comments
+
+commit 05d45e437631ab0a2bee05f5dbafc6fa35a328a0
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Mon Nov 8 22:53:20 2021 +1100
+
+    blog page complete. fixed nav bar issue where buttons weren't clickable due to an overlayed div
+
+commit d0ab303aa8ec53a7fb0d112962d2916f75a70aea
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Mon Nov 8 21:11:30 2021 +1100
+
+    portfolio page complete, with sample projects
+
+commit 8f7741866418e945a06a9360e50f68f3e02cc828
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Mon Nov 8 00:02:39 2021 +1100
+
+    About page complete
+
+commit 22bae4c7e65ca9f2116ee206687227c521b994e4
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Sun Nov 7 18:48:44 2021 +1100
+
+    Completed Home: main section
+
+commit 22ff5d1b2ca9e819d0287a71feb57ea41c9dd669
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Fri Nov 5 12:49:22 2021 +1100
+
+    updated all icons to white for better contrast and consistency. Added linkedin and github buttons
+
+commit 100f931935e2c2fc2807b7411a4d7bdeda8d7926
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Fri Nov 5 10:45:55 2021 +1100
+
+    navbar changed white icons for black - better background contrast
+
+commit 1f9569e3353bda67c06bc030aff81eb42e9d3262
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Fri Nov 5 10:10:08 2021 +1100
+
+    banner image and centred cover text
+
+commit 80ac894acf3ab0127e371713674d3bf42bf7c7ee
+Author: Geoff Reid <70560312+LetTheWookieWin92@users.noreply.github.com>
+Date:   Thu Nov 4 19:27:25 2021 +1100
+
+    Nav bar complete (#2)
+    
+    * Nav bar complete
+    
+    * Nav bar final additions
+
+commit f8959a19c84a7ef7551312e2e359fc26926d5956
+Author: Geoff Reid <70560312+LetTheWookieWin92@users.noreply.github.com>
+Date:   Thu Nov 4 19:06:53 2021 +1100
+
+    Nav bar complete (#1)
+
+commit 993df4c4dad4acc350d28c80f97d63d82c18a7c1
+Author: Geoff Reid <geoff_reid@outlook.com>
+Date:   Thu Nov 4 15:36:44 2021 +1100
+
+    Project started
