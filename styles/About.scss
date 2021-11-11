@@ -41,7 +41,8 @@
 
   // Gives it a card aesthetic
   background-color: white;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: $card-box-shadow;
+  border-radius: $card-bord-radius;
 
   // Sets font family for all the children
   font-family: $site-font;
@@ -78,7 +79,8 @@
 
   // Gives it a card aesthetic, rounded corners like a pill
   background-color: white;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: $card-box-shadow;
+  border-radius: $card-bord-radius;
   border-radius: 25px;
 
   // Sets font family for all the children

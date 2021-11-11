@@ -6,7 +6,8 @@
 
   // Gives it a card aesthetic
   background-color: white;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: $card-box-shadow;
+  border-radius: $card-bord-radius;
 
   // Sets font family for all the children
   font-family: $site-font;
@@ -15,6 +16,7 @@
     position: absolute;
     width: 100%;
     height: 30px;
+    margin-top: 5px;
 
     p {
       margin-top: 5px;
@@ -27,7 +29,7 @@
   .card-content {
     position: absolute;
     width: 100%;
-    top: 35px;
+    top: 40px;
     left: 5px;
     right: 5px;
     bottom: 5px;

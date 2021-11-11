@@ -25,7 +25,8 @@
   .profile-image {
     max-width: 100%;
     height: auto;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: $card-box-shadow;
+    border-radius: $card-bord-radius;
   }
 
   // Intro text that sits next to profile image.
@@ -37,7 +38,8 @@
 
     // Gives it a card aesthetic
     background-color: white;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: $card-box-shadow;
+    border-radius: $card-bord-radius;
 
     // Spacing between paras
     p {
